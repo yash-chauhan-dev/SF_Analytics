@@ -3,6 +3,9 @@
 
 Unlock the power of your data warehouse with **natural language queries**! This project enables business users to ask data questions in plain English and receive answers directly from **Snowflake**, powered by **OpenAI** and **LangChain**.
 
+![Streamlit_Dashboard](https://github.com/user-attachments/assets/57ee4e23-9987-431f-b7a7-20aac7b24cff)
+
+
 ## 🚀 Overview
 
 **Smart Data Analyst** is an end-to-end data analytics platform that empowers non-technical users to access and analyze data using simple natural language. The system automatically:
