@@ -1,0 +1,31 @@
+tables:
+  - name: user_events
+    description: Raw event-level data capturing all user interactions on the ecommerce platform, including views, purchases, and session info.
+    columns:
+      - name: user_id
+        description: Unique identifier for each user.
+        example: U123456
+      - name: event_time
+        description: Timestamp when the event occurred.
+        example: 2025-04-11T10:23:45
+      - name: event_type
+        description: Type of event performed by the user (e.g., view, purchase, cart).
+        example: purchase
+      - name: product_id
+        description: Unique identifier of the product involved in the event.
+        example: P98765
+      - name: category_id
+        description: ID of the product's category.
+        example: C4321
+      - name: category_code
+        description: Categorical code representing the product’s classification.
+        example: electronics.smartphone
+      - name: brand
+        description: Brand name of the product involved in the event.
+        example: Samsung
+      - name: price
+        description: Price of the product at the time of event.
+        example: 599.99
+      - name: user_session
+        description: Session ID tracking the user’s visit.
+        example: SESS_abc123

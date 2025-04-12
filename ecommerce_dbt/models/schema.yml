@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: ecommerce
+    database: ecommerce 
+    schema: public
+    tables:
+      - name: user_events
+
+models:
+  - name: orders_summary
+    description: "Daily total orders and revenue from purchases"
+    columns:
+      - name: event_date
+        description: "Date of the purchase"
+      - name: total_orders
+        description: "Total number of orders on that day"
+      - name: total_revenue
+        description: "Total revenue from purchases"
