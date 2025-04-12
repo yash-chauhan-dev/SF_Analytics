@@ -39,13 +39,17 @@ Unlock the power of your data warehouse with **natural language queries**! This 
 
 ```mermaid
 graph TD
-  A[User Input in Streamlit] --> B[LangChain + OpenAI (NL → SQL)]
-  B --> C[Query Snowflake]
-  C --> D[Return Results (Table / Chart)]
+  A[User Input] --> B[LLM Engine]
+  B --> C[Run SQL on Snowflake]
+  C --> D[Display Results]
+
   subgraph ETL Pipeline
-    E[Airflow] --> F[Ingest CSV/API to Snowflake]
-    F --> G[dbt Models (Cleaned Data)]
+    E[Airflow]
+    F[Load to Snowflake]
+    G[dbt Models]
+    E --> F --> G
   end
+
   G --> C
 ```
 
@@ -98,4 +102,4 @@ graph TD
 ## 📬 Contact
 
 **Yash Chauhan**  
-[LinkedIn](https://www.linkedin.com/in/yash-chauhan-dev) | y4shchauhan@gmail.com
+[LinkedIn](https://www.linkedin.com/in/yshchauhan) | y4shchauhan@gmail.com
